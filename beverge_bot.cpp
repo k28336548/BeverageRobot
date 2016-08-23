@@ -1,5 +1,9 @@
-//A food/drink offering program developed for a robot to detect people through laser and interact with them.
-//by D. Chen 2014
+/** @file beverage_bot.cpp
+ *  @authors D. Chen
+ *  @date  April 2014
+ *  @brief A food/drink offering program developed for a robot to detect people through laser and interact with them.
+ */
+ 
 #include <libplayerc++/playerc++.h>
 #include <libplayerc++/playerclient.h>
 #include <iostream>
