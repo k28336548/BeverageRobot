@@ -193,8 +193,8 @@ void moveToPeople(PlayerClient *robot, LaserProxy *lp, Position2dProxy *pp){
 					checkWidth = true;
 				}
 
-				// Inscribed Angle Variance
-				// find an average angle of all points between the start and end points in the segment
+				// check the average inner angle of the arc
+				// find an average angle of all points between the start point and end point in the segment
 				angleAverage = 0;
 				for(int j = 1; j < endpointindex; j++){
 					player_point_2d_t midpoint = lp->GetPoint(segmentArray[i][j]);
@@ -281,7 +281,7 @@ void moveToPeople(PlayerClient *robot, LaserProxy *lp, Position2dProxy *pp){
 
 				
 				checkLeg = false;
-				// for simplication only do the Inscribed Angle Variance
+				// for simplication only do the inner angle check (accurate enough)
 				// else a more complete checking is to include all the characterics of the leg
 				// and determine a final result  based on the weighting of each feature
 				if(checkCircle){
